@@ -16,7 +16,6 @@ position:fixed;
 width: 100%;
 top: 0;
 right: 0;
-flex-wrap: wrap;
 }
 
 header.sticky{
@@ -48,6 +47,20 @@ nav ul li a:hover{
     padding: 10px;
     transition: all .3s ease;
 }
+.iconav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.iconav div {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    white-space: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
 .iconav a i:hover{
     transform: scale(1.1);
     color: brown;
@@ -78,7 +91,7 @@ section{
 }
 .mainmenu a {
     padding: 10px;
-    color:#102C57;
+    color:#070606;
     text-transform: capitalize;
     font-weight: 600;
     border: solid 2px black;
@@ -154,12 +167,12 @@ transform: scale(.9);
     position: absolute;
     top: 6px;
     left: 13px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     text-transform: capitalize;
-    background-color:#059212;
-    border-radius: 6px;
-    padding: 2px;
+    background-color:#6EC207;
+    font-weight: 500;
+    padding: 5px;
 }
 .heart-icon {
     position: absolute;
@@ -223,4 +236,72 @@ i {
 }
 .f-link a:hover{
     color: #C80036;
+}
+.xx{
+    display: none;
+}
+
+#menus{
+    display: none;
+}
+
+.hide{
+    display: none;
+}
+
+footer{
+    padding: 10px 10px;
+    text-align: center;
+
+}
+
+@media(max-width: 890px){
+    header{
+        padding:20px 3% ;
+        transition: all .3s;
+    }
+}
+@media(max-width:700px){
+    .mainmenu h1 {
+        font-size: 40px;
+        transition: all .3s;
+    }
+    .mainmenu p{
+        font-size: 18px;
+        transition: all .3s;
+    }
+
+}
+@media(max-width:700px){
+    #shopeNow {
+        padding: 5px;
+        transition: all .3s;
+    }
+}
+
+@media(max-width:750px){
+    .navHeader{
+        position: absolute;
+        width: 300px;
+        top: 100%;
+        right: -100%;
+        background-color: #91DDCF;
+        padding: 130px 30px;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        transition: all ease .35s;
+        align-items: center;
+    }
+
+    .navHeader li a{
+        display: block;
+    }
+    .navHeader.open{
+        right: 0;
+    }
+    #menus{
+        display:block;
+        transition: all ease .3s;
+    }
 }
